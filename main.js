@@ -11,7 +11,26 @@ const jobTypes = {
 
 // Your code will go here
 
-  
+ //Crew Member class
+class CrewMember{
+  constructor(name,job,specialSkill)
+  {
+    this.name = name;
+    this.job = job;
+    this.specialSkill = specialSkill;
+    this.ship = null;
+  }
+  // entership function, set name and add crew to array
+  // crewMember1.enterShip(mav)  calling method 
+  enterShip(ship) //
+  {
+    this.ship = ship // Setting crew member ship ... was null
+    ship.crew.push(this) // adding crew memeber to ship
+  }
+};
+
+
+
 
 
 
