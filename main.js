@@ -30,6 +30,26 @@ class CrewMember{
 };
 
 
+// Ship class
+class Ship {
+  constructor(name, type, ability)
+  {
+    this.name = name;
+    this.type = type;
+    this.ability = ability;
+    this.crew = [];    
+  }
+
+  //mission statement function, check crew, no crew no mission.
+  missionStatement()
+  {
+    if(this.crew.length==0)
+    {
+      return "Can't perform a mission yet."
+    }
+    else return this.ability
+  }
+}
 
 
 
